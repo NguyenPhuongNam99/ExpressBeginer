@@ -3,8 +3,8 @@ const router = express.Router()
 
 const Post = require('../models/Post')
 
-router.get('/', (req, res) => {
-    res.json('Day la post');
+router.get('/add', (req, res) => {
+    res.render('posts/add')
 })
 
 module.exports = router

@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark mb-3">
+    <div class="container">
+        <a href="" class="navbar-brand">Posts</a>
+
+    {{!-- collapsiblae --}}
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    {{!-- navbar chinh thuc --}}
+
+    <div class="collapse navbar-collapse" id="collapsibleNavabar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/" class="nav-link">Trang chu</a>
+            </li>
+
+             <li class="nav-item">
+                <a href="/about" class="nav-link">Thong tin</a>
+            </li>
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    bai viet
+                </a>
+                <div class="dropdown-menu">
+                    <a href="/posts" class="dropdown-item">Tat ca bai viet</a>
+                    <a href="/posts/add" class="dropdown-item">Tao bai viet moi</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+</nav>
