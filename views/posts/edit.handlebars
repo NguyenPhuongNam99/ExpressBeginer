@@ -1,0 +1,16 @@
+<div class="card card-body">
+    <h3>chinh sua bai viet</h3>
+    <form action="/posts/{{post._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+            <label for="title"> Tieu de </label>
+            <input type="text" class="form-control" name="title" required value="{{post.title}}" >
+        </div>
+
+        <div class="form-group">
+            <label for="title"> Noi dung </label>
+            <textarea name="text" class="form-control" required>{{post.text}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">chap nhan thay doi</button>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+{{#each posts}}
+<div class="card card-body mb-2">
+    <h4>{{title}}</h4>
+    <p>{{text}}</p>
+    <a href="/posts/edit/{{_id}}" class="btn btn-dark btn-block mb-2">thay doi</a>
+    <form method="post" action="/posts/{{_id}}?_method=DELETE">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="xoa" class="btn btn-danger btn-block">
+
+    </form>
+</div>
+{{else}}
+<p>chua co bai viet nao</p>
+
+{{/each}}

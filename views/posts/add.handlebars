@@ -3,12 +3,12 @@
     <form action="/posts" method="post">
         <div class="form-group">
             <label for="title"> Tieu de </label>
-            <input type="text" class="form-control" name="title" required >
+            <input type="text" class="form-control" name="title" required value="{{title}}" >
         </div>
 
         <div class="form-group">
             <label for="title"> Noi dung </label>
-            <textarea name="text" class="form-control" required></textarea>
+            <textarea name="text" class="form-control" required>{{text}}</textarea>
         </div>
         <button type="submit" class="btn btn-primary">Tao Post</button>
     </form>
